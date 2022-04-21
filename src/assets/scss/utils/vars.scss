@@ -1,0 +1,32 @@
+
+// Базовая типографика
+
+$font-size:                   20px;
+$line-height:                 1.5;
+$font-family:                 'Montserrat', Helvetica, Arial, sans-serif;
+
+
+// Ширины
+
+$desktop:          1800px;
+$notebook:         1380px;
+$notebooksmall:    1170px;
+$tablet:           1025px;
+$tabletsmall:      769px;
+$mobile:           600px;
+$mobilesmall:      450px;
+
+// Цвета
+
+$black-color: #01142F;
+$corporate-color: #0260E8;
+$danger-color: #FF6666;
+$success-color: #FFF851;
+$gray-dark-color: #6789A9;
+$gray-light-color: #D7E1E9;
+$white-almost-color: #F3F7FA;
+
+$gradient-dark: linear-gradient(180deg, #6789A9 0%, #01142F 100%);
+$gradient-gold: linear-gradient(315deg, #EBB86B 0%, #EBE66B 100%);
+
+$text-color: $black-color;

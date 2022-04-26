@@ -17,12 +17,6 @@ export default {
   components: {
     TheHeader,
     TheFooter
-  },
-  data() {
-    return {}
   }
 }
 </script>
-
-<style lang="scss">
-</style>

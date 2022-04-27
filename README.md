@@ -1,45 +1,22 @@
-# Vue 3 cli template
+# Стартовая сборка с Vue CLI
 
-## Project setup
+## Установка
 
-```
-yarn install
-```
+Требуются установленный [git](https://git-scm.com/) и [Node.js (LTS)](https://nodejs.org/en/).
 
-or
+1. Открыть терминал, попасть в папку проектов, клонировать этот репозиторий: `git clone https://github.com/skireal/vue-cli-template.git my-new-project` (где `my-new-project` — папка для нового проекта).
+2. Перейти в папку нового проекта (в этом примере — `cd my-new-project`).
+3. Удалить историю разработки: `rm -rf .git`
+4. Установить зависимости проекта: `npm i`.
+5. Создать репозиторий и добавить начальные файлы:
+   `git init`
+   `git add -A`
+   `git commit -m 'init'`
 
-```
-npm install
-```
+## Команды
 
-### Compiles and hot-reloads for development
-
-```
-yarn serve
-```
-
-or
-
-```
-npm run serve
-```
-
-### Compiles and minifies for production
+```bash
+npm run serve          # запуск сервера разработки
+npm run build          # запуск сборки проекта
 
 ```
-yarn build
-```
-
-or
-
-```
-npm run build
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-## License
-
-License is MIT. See more [license FAQ](./LICENSE)

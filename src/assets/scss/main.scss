@@ -1,6 +1,10 @@
 @import 'utils/vars';
 @import 'utils/reset';
 
+html {
+    overflow-y: scroll;
+}
+
 body {
     display: flex; // Исправляем баг в IE для min-height and flexbox (flex-direction:column)
     flex-direction: column; // и прижимаем footer в IE 10-11
@@ -11,7 +15,7 @@ body {
     line-height: $line-height;
     text-align: left;
     color: $text-color;
-    background-color: #fff;
+    background-color: $main-color;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -52,5 +56,6 @@ footer {
         max-width: 1000px;
     }
 }
+
 
 @import './common/_common';

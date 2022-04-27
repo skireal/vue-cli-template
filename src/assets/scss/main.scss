@@ -1,72 +1,56 @@
-@import "utils/vars";
-@import "utils/reset";
+@import 'utils/vars';
+@import 'utils/reset';
 
 body {
-  display: flex; // Исправляем баг в IE для min-height and flexbox (flex-direction:column)
-  flex-direction: column; // и прижимаем footer в IE 10-11
-  margin: 0;
-  word-break: break-word;
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: $line-height;
-  text-align: left;
-  color: $text-color;
-  background-color: #fff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    display: flex; // Исправляем баг в IE для min-height and flexbox (flex-direction:column)
+    flex-direction: column; // и прижимаем footer в IE 10-11
+    margin: 0;
+    word-break: break-word;
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: $line-height;
+    text-align: left;
+    color: $text-color;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 header {
-  flex: 0 0 auto;
+    flex: 0 0 auto;
 }
 
 footer {
-  flex: 0 0 auto;
-}
-
-footer, // also footer if footer without section
-section,
-.section {
-  position: relative;
-  padding: 40px 0;
-  @media screen and (max-width: $desktop) {
-    padding: 36px 0;
-  }
+    flex: 0 0 auto;
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 auto;
 }
 
 .wrapper-content {
-  display: flex;
-  flex-direction: column;
-  flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+
+    padding-top: 100px;
 }
 
 .container {
-  position: relative;
-  flex: 0 0 auto;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1200px;
-  @media screen and (max-width: $desktop) {
+    position: relative;
+    flex: 0 0 auto;
+    margin: 0 auto;
+    width: 100%;
     max-width: 1200px;
-  }
-  @media screen and (max-width: $notebook) {
-    max-width: 1000px;
-  }
+    @media screen and (max-width: $desktop) {
+        max-width: 1200px;
+    }
+    @media screen and (max-width: $notebook) {
+        max-width: 1000px;
+    }
 }
 
-.view-sm {
-  max-width: 700px;
-  &.isCenter {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@import "./common/_common";
+@import './common/_common';

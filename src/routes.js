@@ -1,10 +1,10 @@
-import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 
 import HomePage from '@/pages/home'
 import AboutPage from '@/pages/about'
 import NotFoundPage from '@/pages/notFound'
 
-const routerHistory = createWebHashHistory()
+const routerHistory = createWebHistory()
 
 const routes = createRouter({
   history: routerHistory,

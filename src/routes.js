@@ -4,7 +4,7 @@ import HomePage from '@/pages/home'
 import AboutPage from '@/pages/about'
 import NotFoundPage from '@/pages/notFound'
 
-const routerHistory = createWebHistory()
+const routerHistory = createWebHistory(process.env.BASE_URL)
 
 const routes = createRouter({
   history: routerHistory,
